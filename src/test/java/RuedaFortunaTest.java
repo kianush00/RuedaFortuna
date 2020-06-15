@@ -19,13 +19,19 @@ class RuedaFortunaTest {
     }
 
     @Test
-    void inicializarRueda1(){
+    void lanzarRueda1(){
         o.inicializarRueda(20);
         System.out.println(o.lanzarRueda());
     }
 
     @Test
-    void lanzarRueda1() {
+    void lanzarRueda2() {
+        o.inicializarRueda(2);
+        System.out.println(o.lanzarRueda());
+    }
 
+    @Test
+    void lanzarRueda3() {
+        o.inicializarRueda(-4);
     }
 }
