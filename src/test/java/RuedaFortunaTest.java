@@ -20,7 +20,8 @@ class RuedaFortunaTest {
 
     @Test
     void inicializarRueda1(){
-
+        o.inicializarRueda(20);
+        System.out.println(o.lanzarRueda());
     }
 
     @Test

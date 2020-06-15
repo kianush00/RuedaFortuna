@@ -9,6 +9,7 @@ public class RuedaFortuna {
             }
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Error: número de casillas fuera del rango.");
+            return;
         }
 
         casillas = new int[numeroCasillas];     //inicializa casillas
