@@ -3,6 +3,14 @@ public class RuedaFortuna {
     private int[] casillas;
 
     public void inicializarRueda(int numeroCasillas){
+        try {
+            if(numeroCasillas < 4 || numeroCasillas > 100){
+                throw new ArrayIndexOutOfBoundsException();
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Error: número de casillas fuera del rango.");
+        }
+
         casillas = new int[numeroCasillas];     //inicializa casillas
         int random;     //variable entera que almacenará un número aleatorio que va desde 0 hasta 8
 
